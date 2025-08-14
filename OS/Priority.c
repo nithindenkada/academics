@@ -66,7 +66,7 @@ int main() {
 
     printf("\nAverage Waiting Time = %.2f\nTotal Waiting Time = %d\n", avg, sum);
 
-    // Free memory
+    // Free memory unwanted
     free(p);
     free(at);
     free(bt);
