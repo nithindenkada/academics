@@ -1,12 +1,11 @@
 def Prime(st, end):
-'''  we can use this also    int(i ** 0.5)+1)   '''
     a = []
-    for i in range(st, end):
+    for i in range(st, end+1):
         count = 0
-        for j in range(2, i): 
+        for j in range(2, i+1): 
             if i % j == 0:
                 count += 1
-        if count == 0:
+        if count < 2:
             a.append(i)
     return a
     
