@@ -11,7 +11,7 @@ int main()
         printf("Enter the number of processes (1-20): ");
         scanf("%d", &n);
         if (n < 1 || n > 20)
-            printf("❌ Invalid input! Please enter a number between 1 and 20.\n");
+            printf("Invalid input!\n");
     } while (n < 1 || n > 20);
 
     // Input burst times and process types with validation
@@ -22,10 +22,10 @@ int main()
         // Validate burst time
         do
         {
-            printf("Enter the burst time of process %d (must be > 0): ", i + 1);
+            printf("Enter the burst time of process %d (be > 0): ", i + 1);
             scanf("%d", &bt[i]);
             if (bt[i] <= 0)
-                printf("❌ Invalid burst time! Please enter a positive value.\n");
+                printf("Invalid burst time!\n");
         } while (bt[i] <= 0);
 
         // Validate process type
@@ -34,7 +34,7 @@ int main()
             printf("System/User process (0=System, 1=User): ");
             scanf("%d", &priority[i]);
             if (priority[i] != 0 && priority[i] != 1)
-                printf("❌ Invalid input! Enter 0 for System or 1 for User.\n");
+                printf("Invalid input!\n");
         } while (priority[i] != 0 && priority[i] != 1);
     }
 
@@ -79,7 +79,7 @@ int main()
     }
 
     // Display the results
-    printf("\nProcess\tSystem/User\tBurst Time\tWaiting Time\tTurnaround Time\n");
+    printf("\nProcess\tSystem/User\tBurst\tWaiting\tTurnaround\n");
     for (i = 0; i < n; i++)
     {
         printf("%d\t%s\t\t%d\t\t%d\t\t%d\n",
