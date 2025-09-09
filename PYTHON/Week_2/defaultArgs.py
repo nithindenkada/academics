@@ -1,4 +1,4 @@
-def Greet(college, branch = "CSE"):
+..............def Greet(college, branch = "CSE"):
     print("This student studying in ", college, " in branch ", branch)
 
 a = input("Enter your college name: ")
