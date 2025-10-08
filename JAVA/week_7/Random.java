@@ -1,5 +1,5 @@
-import java.util.Random;
-import java.util.Scanner;
+import java.util.*;
+// import java.util.Scanner;
 
 public class Random {
     public static void main(String [] args) {
