@@ -1,7 +1,7 @@
-import java.util.*;
-// import java.util.Scanner;
+import java.util.Random;
+import java.util.Scanner;
 
-public class Random {
+public class RandomGenerator {
     public static void main(String [] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter how many numbers you want: ");
